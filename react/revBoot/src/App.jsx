@@ -1,13 +1,19 @@
-import Navbarproj from "./components/Navbarproj"
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from "./Home";
+import Contato from './Contato'
+import Produtos from "./Produtos";
+function App(){
+ return(
+ <div>
 
-
-
-function App() {
-  return (
-    <div>
-    <Navbarproj/>
-    </div>
-  )
+ <BrowserRouter>
+ <Routes>
+ <Route path="/" element={<Home/>}/>
+ <Route path="/produtos" element={<Produtos/>}/>
+ <Route path="/contato" element={<Contato/>}/>
+ </Routes>
+ </BrowserRouter>
+ </div>
+ )
 }
-
 export default App

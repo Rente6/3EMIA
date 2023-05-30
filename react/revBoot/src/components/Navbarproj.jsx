@@ -7,11 +7,11 @@ function Navbarproj() {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">João</Navbar.Brand>
+          <Navbar.Brand href="#home"></Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Produtos</Nav.Link>
-            <Nav.Link href="#pricing">Contato</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/Produtos">Produtos</Nav.Link>
+            <Nav.Link href="/Contato">Contato</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
